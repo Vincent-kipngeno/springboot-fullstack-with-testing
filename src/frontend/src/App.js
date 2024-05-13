@@ -11,7 +11,7 @@ import {
     Badge,
     Tag,
     Avatar,
-    Radio, Popconfirm, Image, Divider
+    Radio, Popconfirm
 } from 'antd';
 
 import {
@@ -102,7 +102,7 @@ const columns = fetchStudents => [
                     cancelText='No'>
                     <Radio.Button value="small">Delete</Radio.Button>
                 </Popconfirm>
-                <Radio.Button onClick={() => alert("TODO: Implement edit student")} value="small">Edit</Radio.Button>
+                <Radio.Button value="small">Edit</Radio.Button>
             </Radio.Group>
     }
 ];
@@ -221,20 +221,7 @@ function App() {
                     {renderStudents()}
                 </div>
             </Content>
-            <Footer style={{textAlign: 'center'}}>
-                <Image
-                    width={75}
-                    src="https://user-images.githubusercontent.com/40702606/110871298-0ab98d00-82c6-11eb-88e8-20c4d5c9ded5.png"
-                />
-                <Divider>
-                    <a
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://amigoscode.com/p/full-stack-spring-boot-react">
-                        Click here to access Fullstack Spring Boot & React for professionals
-                    </a>
-                </Divider>
-            </Footer>
+            <Footer style={{textAlign: 'center'}}>By Amigoscode</Footer>
         </Layout>
     </Layout>
 }
